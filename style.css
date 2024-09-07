@@ -89,44 +89,7 @@
 
          /* Imagen de inRoute a la izquierda*/
 
-.col-md-6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-}
+
 
 /* Estilos ajustados para el footer */
 
-
-#footer {
-    margin-top: 75px;
-    overflow: hidden;
-    padding: 10px 20px;
-    background-color: #f1f1f1;
-}
-
-#footer .logo_footer {
-    float: left;
-    height: 100px;
-}
-
-#footer p {
-    float: left;
-    margin: 35px auto;
-    font-weight: 500;
-    font-size: 40px;
-    width: 90%;
-    text-align: center;
-}
-
-#footer .socialmedia-icons {
-    float: right;
-    margin-top: 35px;
-}
-
-#footer .socialmedia-icons img {
-    margin-left: 15px;
-    height: 35px;
-    width: 35px;
-}
