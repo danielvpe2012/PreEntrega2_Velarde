@@ -133,14 +133,10 @@
 
          /* Imagen de inRoute a la izquierda*/
 
-.col-md-6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-}
+
 
 /* Estilos ajustados para el footer */
+
 
 #footer {
     margin-top: 75px;
