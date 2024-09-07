@@ -94,53 +94,33 @@
     /*Banner*/
   .banner-container {
       height: 350px;
-      /* Controla la altura del banner */
       overflow: hidden;
-      /* Asegura que la imagen no se desborde */
       position: relative;
-      /* Necesario para el posicionamiento absoluto del texto */
   }
 
   .banner-image {
       object-fit: cover;
-      /* Asegura que la imagen se ajuste correctamente */
       height: 100%;
-      /* Mantiene la altura del banner */
       width: 100%;
-      /* Ocupa el 100% del ancho */
   }
 
   .banner-text {
       position: absolute;
-      /* Asegura que el texto se superponga a la imagen */
       top: 50%;
-      /* Posiciona verticalmente el texto en el centro */
       left: 50%;
-      /* Posiciona horizontalmente el texto en el centro */
       transform: translate(-50%, -50%);
-      /* Centra el texto perfectamente */
       z-index: 2;
-      /* Coloca el texto por encima de la imagen */
-      color: white;
-      /* Asegura que el texto sea visible (blanco en este caso) */
+      color: rgb(54, 49, 49);
+      text-shadow: 15px;
   }
   
 
   h1 {
       font-size: 2.5rem;
-      /* Puedes ajustar el tamaño del título aquí */
   }
 
-         /* Imagen de inRoute a la izquierda*/
-
-.col-md-6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-}
-
 /* Estilos ajustados para el footer */
+
 
 #footer {
     margin-top: 75px;
