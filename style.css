@@ -117,7 +117,17 @@
 
   h1 {
       font-size: 2.5rem;
+      /* Puedes ajustar el tamaño del título aquí */
   }
+
+         /* Imagen de inRoute a la izquierda*/
+
+.col-md-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
 
 /* Estilos ajustados para el footer */
 
