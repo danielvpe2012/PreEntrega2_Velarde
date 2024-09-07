@@ -11,22 +11,54 @@
 
 
     <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .nav-link {
+            transition: transform 0.3s ease;
+        }
+    
+        .nav-link:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Header -->
     <header id="header">
-        <nav class="navbar">
-            <img src="/Images/Logo.png" alt="Logo" class="logo">
-            <ul>
-                <li><a href="/homepage.html">INICIO</a></li>
-                <li><a href="/Pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="/Pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="/Pages/portafolio.html">PORTAFOLIO</a></li>
-                <li><a href="/Pages/presupuesto.html">PRESUPUESTO</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/Images/Logo.png" alt="Logo de inRoute" width="70x">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/homepage.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Pages/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Pages/portafolio.html">PORTAFOLIO</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="/Pages/presupuesto.html">PRESUPUESTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <!-- Main Content -->

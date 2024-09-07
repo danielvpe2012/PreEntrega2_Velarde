@@ -5,41 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inRoute - Agencia de Marketing</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .nav-link {
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Header -->
     <header id="header">
-        <nav class="navbar">
-            <img src="/Images/Logo.png" alt="Logo" class="logo">
-            <ul>
-                <li><a href="/homepage.html">INICIO</a></li>
-                <li><a href="/Pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="/Pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="/Pages/portafolio.html">PORTAFOLIO</a></li>
-                <li><a href="/Pages/presupuesto.html">PRESUPUESTO</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/Images/Logo.png" alt="Logo de inRoute" width="70x">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/homepage.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Pages/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Pages/portafolio.html">PORTAFOLIO</a>
+                        </li>
+                        <li class="nav-item"></li>
+                        <a class="nav-link" href="#">PRESUPUESTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <!-- Main Content -->
 
 
     <!-- Footer -->
-    <footer id="footer">
-        <img src="/Images/Logo.png" alt="Logo" class="logo_footer">
-        <p>Contáctanos 980 637 501</p>
-        <div class="socialmedia-icons">
-            <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC4klEQVR4nO2aSWsUQRSAP4kbSjAhbiEeRHD8FYIXBRHBFY0XRVwiGHNRNBA0IooIasa/4EHQgzdlxIOCoiagInhwCXjXZHQSUZMYpeANhCbTS/WrXrQ/eJfQXe990+nq11UNBQUFBQX/LyuBfUAZqAAfgFFgQmJU/laRYzrlnFzRBpwAhoA/ljEIdMtYmWUVMAB8jyHqjXHgOtBBhpgH9ABjiqLeMD9iP7Agbdl1wGuHot54BZTSkt3p+Ko2ihqwPWnZA8BkCrL1mAK6kpI9mqKoN8xM7vzfeCoDojOv9DaXE9SYo8KngRFgGPgkDUktwj29Vlt2voPZ+BtwBVgPLGyQd5F0YEFjvZTHoxpnlGXvAi0hc/eHHPOUlmyHdDxasjeBORHyhxU2t1u7hvCAoux7YHHE/GGFTVyNK9um3BsfsaghivB43BeObkXZHzIJ+WFm2x3A7hlxJ2Ke43GEhxSFnwTk6pPHU9w8L2xl25UKqMcNn1wlxVxmnOU2wp2KsibO+uQ6p5xrj41wWbkIswrSiFvKucyiQWQqykUc88n1UDnXfRvh4QSFHynnMguDkRnJsfBnG+FfORb+maTweaB1lvBbgGtucI6J2xY1mNojU7UU7kWXQYsavtgk+pgR4a8WNbyzSfQgA8LtljXcS7Lx6FUU3pBk47E3A8JdljXssl3pmLZI9kZmVm9sCnjnne2ctxb5f8fZgXxm+Qun+RwOeg31pSeHwn4vKYG0KK5FJyFs1qiXEJNyjoSvocAyWTTPurC5uitQ4nQOhE+iyFzLnjYp4edAE8qULPta18JVF5tpdbbG2C51IWxq2Yxj9ks3k7aw6QIPkxCHLD550BSekM8uEmVLxHtaS7ga0Jc7ZY1sbSQl/BRYTco0Sc9dcyhclU0y9UdP3I7sso+4jbDp8C4CS8kwzTJ7PvZMbGGFJ+XcgzJWrmiVr+bMVdroc9wF4JIcG/bbj4KCgoIC/jX+AocFmR7e9rp4AAAAAElFTkSuQmCC">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7klEQVR4nO2azU4TURTHf8WKC4s8gBpFE4KChrA1ou6sbFSiL2DEpW+g4l6DUvE5QIILbVkQP/aowM5A/XZjy8YEM+Ymh6S5mbYzd+5M75T5JyeZhJ5z7o/7PXMgU6ZMmTJ1r8aAh8AysA5sA55lUzHXgAowLTkTVQ64AWzEABfU1D9gUtoSq04A7zoIqttbYCAu2HPADwcgdfsNXLINewH46wBcM1NtG7cFexz46QBUkJ4+GRU2B7x3ACaovYm6kN10ACKsXY/Su+sOAOzaInAYOAIstdmyjDTmAGSjKdBdHW3z21ET4OkUAz8wAV52ALLRlgRawb5s89uyCfCGxcZuArPAZWAIOCimnotACdiymE+tPaFVt5C4CkwB+QD5euSM/tlCXtX20IqadB7oM8irfBYs5E8U+Kn0mKl6ZAqkAni+CewZ4AnwQe642/I8A4w0gV5wHbjqM4wPAHPAvxZ+O7Jw9Wq+h4CvLgPf8oGthPAv+0BPuQq8CezTYjw3iKPmbqPyMnKcA571mbOthnGr4T2sxXrmInBR858xHIrKHmuxJlwEHtT8P0YAXtViDbkIXLB4UqtpsQouAvdp/rUIwH98tifngAf32pAu7rVFq6T5j8gWEzaO8jmtxZpzEXjL5xpYMoijztupOHh4wG0thjomvg7h/wrYr8W4Y9iWRIC/+KzWvXIKazW8d6Rnddh+4JvLwJ5c6fyuh8OyGK3KHl2X50c+cxaJsRihHYkBe9KjUV8AmMz/jgF7wAs5MIRVf8SeNQauWUj6C7gb8CVeXu6+phf+Vie1xF/TVmUvvQKckrNxQZ4n5G8mW4/V17QViw1I2tRWGFqufWoJY/e64WOaF8LOdsPnUi+gqVuasSYdAAhrV6MA56SMwEuJrWBBxxwtV/IralF1ZFY0noKypfPEUJj23dGevUhMGnBsTq/IlItVOSkN+tRBUJX7Gh3QKHBfPoKtWaoa0K0uscuSy6hCJ1OmTJkykQL9B/2rRu7parMTAAAAAElFTkSuQmCC"
-                alt="Social Media 2">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADy0lEQVR4nO2bSUhWURTHf9pkpYsGaFJopEVRUbarSMhtGARNEC0kIhppsIFAK0vIFmVYtIjaCA0Ubdq0KGhRli1aSEFocxARaWVaaV9cOIF8vOned9/3ruAf/iCfcs75v/fde4Z7hUEMIi6KgFJgPXAAqAPOCdXPVfK7UvnbAYd8oAyoB54CfUAmInuBFuAUsFxsOYtJwHHgjYbAMCpbx4CJOIRioBHotig0m92yBCanKXQosBP4lqDQbP4AqoHhuRY7U9ZnJiU+AabnSuxqoDNFsf/ZAaxKWuw2zV03af4F9iQlttoBgX48YlvsVgdEhXGXzTXb54CgMPbZWNMzZHPIDBB2xNm9h6WceuKkLFUjaGOfA8HnbD0XA98NHL2X4v95yuu+U7cMbdR00AOsybKxOeW33KDT9eg2Ahs87KjWrj1FwT+jdlnHNQ1fdXgfOBomNt+gn1WTCj+MAbpSFPwayAsSXKZp8EXYEwQupfyWlwUFV69p7EYEwYtSFlwXFJxuoaHeXhQ8S1HwY7+gigxy560IYodbnnPpshco9Aqs1MDYqwiCj6T8lc4AC70C22DTmKDCkU5rnVdwBw2NXfQRO8qwPE2CVV4BnjA0pvLsFB/R9xwQmwFqvYJriGGwyUfwdBmtZlysq8/ENKrWqxc2uSq4JqbRL0CJj+jTLn6ld1sw/AgY6WE7z6DlTHzT2mjJ+DWfgl19dlgKgbDua7Econ1JMi0tsPhET+KPFcC7gDKwIKv62yOTlDjxLPQrAXssit4bILpQHkr/PP0xIL2NACqBlwZx9AKj/QJpsSg4I1/hIIwFDgF3Q/rq/pPUh5oxNAcZrLMs+H8lpgK1hSaLywuTBiIK78sk1AYeafpeEmRM7aRtCYn+KpkgDsYBfzR8toeNeGwUIGF8IBdWTHBB01dNFKPjc1T/3pOWVHVVYVDFzBWDMe2EqE9Sd7YVh+qOyGWg3KNKU7v4FuCtgV3VG0TGrBwK7s/fkmtbgQ+a6zX7FFHrqlNFSoJtcTuaOO9A0KZUaWuIruA2BwI3TX3TdMXOdiBwE6ph4UoMsNOB4E24A0PccSB4202KLwpSPu0zuZimJjXGKHdAhM4GZbRmXRq26aSeqVhAqwNigvhDBnJG15KyUaLpXA3YbssVobMJNxxdUhtbvRlfGeL0M3BT0tZ8j/9HGCcnhTaPRtulxYvc9eigLsvZJ+C61KVzozTSWaf+tTIj+6U5cGuWscxSTZ/amCyblro5O8eiMzXPmie97255Y2fk+EMJ2w+slVGq58H1IAZBZPwDK8ejXYVKOAcAAAAASUVORK5CYII="
-                alt="Social Media 3">
+<footer class="bg-light py-3">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-4 d-flex justify-content-start">
+                <img src="/Images/Logo.png" alt="Logo" class="img-fluid" style="max-width: 50px;">
+            </div>
+
+
+            <div class="col-md-4 d-flex justify-content-center">
+                <p class="mb-0">Contáctanos 980 637 501</p>
+            </div>
+
+
+            <div class="col-md-4 d-flex justify-content-end">
+                <a href="#"><img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik00NDkuNDQ2LDBjMzQuNTI1LDAgNjIuNTU0LDI4LjAzIDYyLjU1NCw2Mi41NTRsMCwzODYuODkyYzAsMzQuNTI0IC0yOC4wMyw2Mi41NTQgLTYyLjU1NCw2Mi41NTRsLTEwNi40NjgsMGwwLC0xOTIuOTE1bDY2LjYsMGwxMi42NzIsLTgyLjYyMWwtNzkuMjcyLDBsMCwtNTMuNjE3YzAsLTIyLjYwMyAxMS4wNzMsLTQ0LjYzNiA0Ni41OCwtNDQuNjM2bDM2LjA0MiwwbDAsLTcwLjM0YzAsMCAtMzIuNzEsLTUuNTgyIC02My45ODIsLTUuNTgyYy02NS4yODgsMCAtMTA3Ljk2LDM5LjU2OSAtMTA3Ljk2LDExMS4yMDRsMCw2Mi45NzFsLTcyLjU3MywwbDAsODIuNjIxbDcyLjU3MywwbDAsMTkyLjkxNWwtMTkxLjEwNCwwYy0zNC41MjQsMCAtNjIuNTU0LC0yOC4wMyAtNjIuNTU0LC02Mi41NTRsMCwtMzg2Ljg5MmMwLC0zNC41MjQgMjguMDI5LC02Mi41NTQgNjIuNTU0LC02Mi41NTRsMzg2Ljg5MiwwWiIvPjwvc3ZnPg=="
+                        alt="Facebook" style="width: 24px; margin-left: 15px;"></a>
+                <a href="#"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABPxJREFUaEPdmkcIZEUQhr81HMwnc85iQHcREwZUvKigoK66a1YUc7joiigKhpOKWTHnCArqxawYDuKaBXdVFBN6Ma4H4/ukGpvHm5l+b98sM9blzbzprq6/uqr67+6ZwX+yInAmcAiwGbBc9tskfPwN+Bh4GLgG+EWjZoRlGvw0sPEkWFpgw0JgX2CBAPT821NkfMK3AJgpgPOBSwtQT2KTeQLQ+9tOonUFNs0XwKIJTNgC2/9tskgAf5e2nsR2iwNA4F8DnwPfAn9mAH8G/qgBXgZYKXu3NLAGsD6wVlYRW/mpC4D3og4/GYa3GnBAY4HsH+vQ1m0UtgHwO3BW5bWbgL/aDNKi7VLAycBVVWVctqRfKQCNd+F4tqZ0PWAjYFVgZcCwSKIxq8SXH2ugDbefgO+BT4Evanr3AZ4qAVEK4FTghmyQI4Fzga1KvFTQ5gPgCuDerK1jXjeqbwkAY367zIPXAqeNUtzxdw0+Pfo6g+8AQ3OiBMAJwG2hVM/f3dG4pm4vh5c3qarWBcDywBHAfdH4eODWYeONAmCptMRZJpX3ewybHwBzyJKrJEpjOCWvrwl8NazEjgLwZeX9dWMAB7Pml8ivwGuxTth+bWCX8HDqLzXePFN2KPBgfHdMx1Z82r9RRgF4PQa2857A8yOst6JcBDxWJbn8PRf3FwdX3rwY2DAYgEY/EhXMqrNrdHCsF+Ozjti5K4AnKrJ3YHQ+vNro3D8EgN47rsHwehfj/A5gdoCQ268eIFLbOdXsPBBfHgcO6ApAT+o15WjgzgGKNN5BE69yPTBkEsuV8erJtAA68/YRRJMcU83SXfHDo8BBXQE8BBwWnfVuqka5PsPGpEshs0N4eMvaoBaAYyvK8Ga8dyZM2A0ajLP63B7vBWqoNcqoHLCcWdaUE4GbG7RYWtMCtCPwwhB6LnXfIwNxVObpXPVJVfW7JV6oe25XANZ8Q0c5paIM19cUWW2kEXrfsHm32nTXPV8fO18YnQXphM9c8pXfUBJopxlwGp1OxRXS04Bc5EbyFmU3wIWpRKw2r0ZDdexd63QG4IqvGLaGbycATqPTqZxdVYora1qsJkl5E8BB40pF0myqw6TN5ZxgpL4zbA3fsQCwKpmYShH5ytomctgUIr0BaBNChsUrJfETC1YKoeeq0NtrXCHUJomL2GMk+sxYE8aexCVl1ApxT3hw+4pyvNRQVZKDrVq7A2/FC2PfHKhLb2W0ZCH7LBYya7wiCI2q83hLrPmSjF+hWok/DEZaB9DbQlZKJTxwdcVOVMJw2gmYFZZp9Bs1KmGfRFPqAHqjEm3InAbp4TQTg/JZz1u9Bhlvv97IXFs67X7hwqDIdTptwnp0f8mAsMkB90anu25onAXBp03JOsFOS+8cetvQjHNLOSjEZK3bxI+LvaVUT76pl5mmklm4ZrVu1uum3tGn/lhFEDn58rv8fF6PJxRubC7PjlPSmImRDpzGURua1NGjxf2AZ2qaTE7v1VbreLT4HfBJluxJfe9HiyoWhJT6xjEf7rpxkrb3eribO94qcXXcan7TOkWbO1htnGGvecd2vF4f2hIrABcvn10uODTcCw6f6cq3lU9Kc6CV0iXZ+H9xyTf116zW88uW5LT3ONZ56a8G86vDKc/op0k83Z6VMn/TuJPyOQ2i8ZbdhXnpcqPh2Y4HrltM4O29+4uP4u82XkW5v+YfNIhAp6wevacAAAAASUVORK5CYII="
+                        alt="Instagram" style="width: 24px; margin-left: 15px;"></a>
+                <a href="#"><img
+                        src="data:image/png;base64,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"
+                        alt="Whatsapp" style="width: 24px; margin-left: 15px;"></a>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
+</body>
+
+</html>
 
 </body>
 
